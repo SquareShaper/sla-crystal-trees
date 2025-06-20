@@ -3,15 +3,14 @@
 	"id": "sla-crystal-trees",
 	"version": "${version}",
 	"name": "SLA - Crystal Trees",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod adds a new tree type, the Crystal Tree ",
 	"authors": [
-		"Me!"
+		"SquareShaper"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/SquareShaper/sla-crystal-trees"
 	},
-	"license": "CC0-1.0",
+	"license": "<MIT>",
 	"icon": "assets/sla-crystal-trees/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +19,9 @@
 		],
 		"fabric-datagen": [
 			"net.squareshaper.slacrystaltrees.SLACrystalTreesDataGenerator"
+		],
+		"client": [
+			"net.squareshaper.slacrystaltrees.SLACrystalTreesClient"
 		]
 	},
 	"mixins": [

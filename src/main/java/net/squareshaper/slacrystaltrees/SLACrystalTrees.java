@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
 import net.squareshaper.slacrystaltrees.registry.ModBlocks;
+import net.squareshaper.slacrystaltrees.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +18,6 @@ public class SLACrystalTrees implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
